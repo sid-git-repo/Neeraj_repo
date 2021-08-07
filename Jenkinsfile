@@ -5,8 +5,8 @@ pipeline {
 		maven 'maven3.8'
 	}
 
-	environment {
-		M2_INSTALL = "/home/siddharth/Maven/maven-3.8.1"
+	// environment {
+	// 	M2_INSTALL = "/home/siddharth/Maven/maven-3.8.1"
 	}
 
     stages {
