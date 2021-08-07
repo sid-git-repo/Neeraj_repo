@@ -28,8 +28,10 @@ pipeline {
 		stage('Deployment') {
 	    	steps {
 				print "Deployment is done!"
-				sh 'cp /home/siddharth/.jenkins/workspace/test_pipeline1/target/neeraj.war /opt/tomcat/webapps/'
+				sh 'cp /home/siddharth/.jenkins/workspace/test_pipeline1/target/neeraj.war /home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps'
 				sh  'echo "neeraj war file is dep[loyed on tomacat"'
+				sh '/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/bin/shutdown.sh'
+				sh '/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/bin/startup.sh'
 				sh  'ls /opt/tomcat/webapps/'
 	    	}
 		}
