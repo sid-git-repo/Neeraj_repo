@@ -30,6 +30,7 @@ pipeline {
 				print "Deployment is done!"
 				sh 'cp /home/siddharth/.jenkins/workspace/test_pipeline1/target/neeraj.war /opt/tomcat/webapps/'
 				sh  'echo "neeraj war file is dep[loyed on tomacat"'
+				sh  'echo "well done!"'
 	    	}
 		}
     }
