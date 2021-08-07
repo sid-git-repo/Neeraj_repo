@@ -2,12 +2,12 @@ pipeline {
     agent any
 
 	tools {
-		maven 'maven3.6'
+		maven 'maven3.8'
 	}
-//
-//	environment {
-//		M2_INSTALL = "/home/gamut/Distros/apache-maven-3.6.0/bin/mvn"
-//	}
+
+	environment {
+		M2_INSTALL = "/home/siddharth/Maven/maven-3.8.1"
+	}
 
     stages {
 		stage('Clone-Repo') {
@@ -28,8 +28,8 @@ pipeline {
 		stage('Deployment') {
 	    	steps {
 				print "Deployment is done!"
-//				sh 'sshpass -p "gamut" scp target/gamutkart.war gamut@172.17.0.3:/home/gamut/Distros/apache-tomcat-8.5.41/webapps'
-//				sh 'sshpass -p "gamut" ssh gamut@172.17.0.3 "JAVA_HOME=/home/gamut/Distros/jdk1.8.0_211" "/home/gamut/Distros/apache-tomcat-8.5.41/bin/startup.sh"'
+				sh cp /home/siddharth/.jenkins/workspace/test_pipeline1/target/neeraj.war /opt/tomcat/webapps/
+				sh  echo "neeraj war file is dep[loyed on tomacat"
 	    	}
 		}
     }
