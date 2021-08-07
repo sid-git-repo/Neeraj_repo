@@ -7,7 +7,7 @@ pipeline {
 
 	// environment {
 	// 	M2_INSTALL = "/home/siddharth/Maven/maven-3.8.1"
-	}
+	// }
 
     stages {
 		stage('Clone-Repo') {
