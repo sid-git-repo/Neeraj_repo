@@ -1,0 +1,646 @@
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-Aug-2021 14:36:11.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.38
+07-Aug-2021 14:36:11.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 5 2019 11:42:42 UTC
+07-Aug-2021 14:36:11.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.38.0
+07-Aug-2021 14:36:11.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-Aug-2021 14:36:11.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.8.0-63-generic
+07-Aug-2021 14:36:11.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Aug-2021 14:36:11.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+07-Aug-2021 14:36:11.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.11+9-Ubuntu-0ubuntu2.20.04
+07-Aug-2021 14:36:11.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+07-Aug-2021 14:36:11.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat
+07-Aug-2021 14:36:11.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat
+07-Aug-2021 14:36:11.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+07-Aug-2021 14:36:11.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+07-Aug-2021 14:36:11.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-Aug-2021 14:36:11.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/conf/logging.properties
+07-Aug-2021 14:36:11.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Aug-2021 14:36:11.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Aug-2021 14:36:11.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Aug-2021 14:36:11.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+07-Aug-2021 14:36:11.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+07-Aug-2021 14:36:11.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat
+07-Aug-2021 14:36:11.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat
+07-Aug-2021 14:36:11.089 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/temp
+07-Aug-2021 14:36:11.089 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+07-Aug-2021 14:36:11.183 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Aug-2021 14:36:11.256 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8080]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:112)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:552)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:639)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:309)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:995)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	... 12 more
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:455)
+	at java.base/sun.nio.ch.Net.bind(Net.java:447)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:219)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1087)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:265)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:581)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:68)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:993)
+	... 13 more
+
+07-Aug-2021 14:36:11.258 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Aug-2021 14:36:11.276 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Aug-2021 14:36:11.321 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2295 ms
+07-Aug-2021 14:36:11.397 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Aug-2021 14:36:11.397 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.38
+07-Aug-2021 14:36:11.418 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/ROOT]
+07-Aug-2021 14:36:12.441 WARNING [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [167] milliseconds.
+07-Aug-2021 14:36:12.511 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/ROOT] has finished in [1,092] ms
+07-Aug-2021 14:36:12.512 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/host-manager]
+07-Aug-2021 14:36:12.608 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/host-manager] has finished in [96] ms
+07-Aug-2021 14:36:12.610 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/examples]
+07-Aug-2021 14:36:13.119 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/examples] has finished in [509] ms
+07-Aug-2021 14:36:13.120 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/docs]
+07-Aug-2021 14:36:13.137 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/docs] has finished in [18] ms
+07-Aug-2021 14:36:13.137 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/manager]
+07-Aug-2021 14:36:13.159 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/manager] has finished in [22] ms
+07-Aug-2021 14:36:13.164 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Aug-2021 14:36:13.174 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1851 ms
+07-Aug-2021 14:36:13.204 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+ java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:440)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:776)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:722)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:353)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:493)
+
+07-Aug-2021 14:36:13.205 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Aug-2021 14:36:13.206 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Aug-2021 14:36:13.263 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+07-Aug-2021 14:36:13.360 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Aug-2021 14:36:13.362 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Aug-2021 14:36:13.363 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Aug-2021 14:36:13.363 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-Aug-2021 14:40:19.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.38
+07-Aug-2021 14:40:19.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 5 2019 11:42:42 UTC
+07-Aug-2021 14:40:19.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.38.0
+07-Aug-2021 14:40:19.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-Aug-2021 14:40:19.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.8.0-63-generic
+07-Aug-2021 14:40:19.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Aug-2021 14:40:19.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+07-Aug-2021 14:40:19.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.11+9-Ubuntu-0ubuntu2.20.04
+07-Aug-2021 14:40:19.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+07-Aug-2021 14:40:19.207 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat
+07-Aug-2021 14:40:19.207 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat
+07-Aug-2021 14:40:19.207 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+07-Aug-2021 14:40:19.208 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+07-Aug-2021 14:40:19.208 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-Aug-2021 14:40:19.208 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/conf/logging.properties
+07-Aug-2021 14:40:19.208 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Aug-2021 14:40:19.208 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Aug-2021 14:40:19.208 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Aug-2021 14:40:19.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+07-Aug-2021 14:40:19.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+07-Aug-2021 14:40:19.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat
+07-Aug-2021 14:40:19.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat
+07-Aug-2021 14:40:19.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/temp
+07-Aug-2021 14:40:19.210 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+07-Aug-2021 14:40:19.265 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Aug-2021 14:40:19.279 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Aug-2021 14:40:19.298 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Aug-2021 14:40:19.300 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Aug-2021 14:40:19.301 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 723 ms
+07-Aug-2021 14:40:19.382 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Aug-2021 14:40:19.382 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.38
+07-Aug-2021 14:40:19.415 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/jenkins.war]
+07-Aug-2021 14:40:28.341 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Aug-2021 14:40:29.493 INFO [localhost-startStop-1] hudson.WebAppMain.contextInitialized Jenkins home directory: /home/siddharth/.jenkins found at: $user.home/.jenkins
+07-Aug-2021 14:40:31.573 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/jenkins.war] has finished in [12,157] ms
+07-Aug-2021 14:40:31.575 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/ROOT]
+07-Aug-2021 14:40:31.616 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/ROOT] has finished in [41] ms
+07-Aug-2021 14:40:31.617 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/host-manager]
+07-Aug-2021 14:40:31.669 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/host-manager] has finished in [52] ms
+07-Aug-2021 14:40:31.669 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/examples]
+07-Aug-2021 14:40:32.077 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/examples] has finished in [408] ms
+07-Aug-2021 14:40:32.077 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/docs]
+07-Aug-2021 14:40:32.121 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/docs] has finished in [44] ms
+07-Aug-2021 14:40:32.121 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/manager]
+07-Aug-2021 14:40:32.183 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/manager] has finished in [62] ms
+07-Aug-2021 14:40:32.202 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Aug-2021 14:40:32.267 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Aug-2021 14:40:32.290 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 12989 ms
+07-Aug-2021 14:40:32.532 INFO [pool-6-thread-3] jenkins.InitReactorRunner$1.onAttained Started initialization
+07-Aug-2021 14:40:32.574 INFO [pool-6-thread-7] jenkins.InitReactorRunner$1.onAttained Listed all plugins
+07-Aug-2021 14:40:35.157 INFO [pool-6-thread-7] jenkins.InitReactorRunner$1.onAttained Prepared all plugins
+07-Aug-2021 14:40:35.165 INFO [pool-6-thread-3] jenkins.InitReactorRunner$1.onAttained Started all plugins
+07-Aug-2021 14:40:35.173 INFO [pool-6-thread-7] jenkins.InitReactorRunner$1.onAttained Augmented all extensions
+07-Aug-2021 14:40:36.706 INFO [pool-6-thread-3] jenkins.InitReactorRunner$1.onAttained System config loaded
+07-Aug-2021 14:40:36.707 INFO [pool-6-thread-2] jenkins.InitReactorRunner$1.onAttained System config adapted
+07-Aug-2021 14:40:36.708 INFO [pool-6-thread-2] jenkins.InitReactorRunner$1.onAttained Loaded all jobs
+07-Aug-2021 14:40:36.708 INFO [pool-6-thread-2] jenkins.InitReactorRunner$1.onAttained Configuration for all jobs updated
+07-Aug-2021 14:40:36.735 INFO [Download metadata thread] hudson.model.AsyncPeriodicWork.lambda$doRun$0 Started Download metadata
+07-Aug-2021 14:40:36.758 INFO [Download metadata thread] hudson.util.Retrier.start Attempt #1 to do the action check updates server
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.vmplugin.v7.Java7$1 (file:/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/jenkins/WEB-INF/lib/groovy-all-2.4.12.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.vmplugin.v7.Java7$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+07-Aug-2021 14:40:37.932 INFO [Finalizing set up] jenkins.install.SetupWizard.init 
+
+*************************************************************
+*************************************************************
+*************************************************************
+
+Jenkins initial setup is required. An admin user has been created and a password generated.
+Please use the following password to proceed to installation:
+
+9c060cab90e0412cb3c692ece2dc8865
+
+This may also be found at: /home/siddharth/.jenkins/secrets/initialAdminPassword
+
+*************************************************************
+*************************************************************
+*************************************************************
+
+07-Aug-2021 14:41:14.480 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/16x16/red_anime.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.707 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/network.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.708 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/light-grey_anime.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.710 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/refresh.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.711 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/disabled_anime.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.712 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/aborted_anime.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.712 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/graph.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.713 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/computer-flash.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.713 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/health-00to19.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.714 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/search.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.714 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/dark-grey.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.715 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/help.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.715 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/warning.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.715 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/secure.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.716 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/yellow.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.716 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/disabled.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.716 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/light-grey.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.717 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/redo.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.717 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/folder.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.717 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/red.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.718 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/grey_anime.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.718 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/empty.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.719 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/monitor.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.719 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/clipboard.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.719 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/user.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.719 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/green_anime.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.720 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/package.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.720 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/document.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.720 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/health-80plus.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:14.721 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/computer.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.088 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/nobuilt.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.088 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/health-20to39.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.089 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/plugin.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.089 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/health-60to79.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.089 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/aborted.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.090 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/setting.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.090 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/installer.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.090 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/gear2.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.091 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/folder-delete.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.091 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/system-log-out.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.092 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/yellow_anime.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.092 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/orange-square.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.093 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/refresh.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.093 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/dark-grey.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.094 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/grey.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.094 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/dark-grey_anime.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.094 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/graph.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.095 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/blue.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.095 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/green.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.096 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/document.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.097 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/folder-delete.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.098 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/computer-user-offline.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.098 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/gear2.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.098 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/computer.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.099 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/error.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.099 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/fingerprint.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.099 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/health-20to39.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.100 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/computer-x.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.100 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/search.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.100 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/terminal.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.100 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/star.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.101 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/notepad.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.101 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/lock.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.101 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/health-00to19.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.102 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/orange-square.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.102 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/health-80plus.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.103 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/plugin.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.103 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/setting.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.104 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/star.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.104 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/nobuilt.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.105 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/clipboard.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.105 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/aborted.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.106 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/system-log-out.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.106 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/blue_anime.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.106 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/freestyleproject.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.107 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/disabled.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.107 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/health-60to79.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.108 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/nobuilt_anime.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.108 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/grey.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.109 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/star-gold.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.111 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/light-grey.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.112 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/yellow.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.112 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/installer.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.113 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/help.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.113 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/warning.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.114 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/health-40to59.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.114 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/network.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.114 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/blue.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.115 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/secure.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.115 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/empty.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.116 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/package.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.116 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/monitor.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.117 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/redo.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.117 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/red.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.118 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/48x48/folder.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.139 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/light-grey.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.139 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/blue.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.139 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/nobuilt_anime.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.140 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/computer-x.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.140 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/health-40to59.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.140 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/secure.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.141 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/health-00to19.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.141 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/dark-grey.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.142 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/aborted.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.142 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/red.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.142 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/yellow.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.143 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/health-20to39.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.143 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/computer.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.144 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/folder.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.144 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/dark-grey_anime.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.144 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/user.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.144 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/plugin.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.145 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/nobuilt.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.145 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/disabled.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.145 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/computer-flash.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.146 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/clock_anime.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.146 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/computer-x.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.146 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/clock.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.147 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/health-80plus.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.147 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/lock.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.147 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/health-20to39.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.148 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/health-60to79.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.148 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/empty.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.148 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/health-40to59.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.148 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/clipboard.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.149 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/computer.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.149 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/user.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.149 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/blue.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.149 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/graph.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.149 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/health-00to19.png] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:15.149 WARNING [http-nio-8080-exec-6] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/images/32x32/health-60to79.gif] to the cache for web application [/jenkins] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+07-Aug-2021 14:41:57.885 INFO [pool-6-thread-1] jenkins.InitReactorRunner$1.onAttained Completed initialization
+07-Aug-2021 14:41:59.898 INFO [Jenkins initialization thread] hudson.WebAppMain$3.run Jenkins is fully up and running
+07-Aug-2021 14:42:01.168 INFO [Download metadata thread] hudson.model.DownloadService$Downloadable.load Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+07-Aug-2021 14:42:01.170 INFO [Download metadata thread] hudson.util.Retrier.start Performed the action check updates server successfully at the attempt #1
+07-Aug-2021 14:42:01.450 INFO [Download metadata thread] hudson.model.AsyncPeriodicWork.lambda$doRun$0 Finished Download metadata. 84,601 ms
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-Aug-2021 17:14:39.188 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.38
+07-Aug-2021 17:14:39.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 5 2019 11:42:42 UTC
+07-Aug-2021 17:14:39.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.38.0
+07-Aug-2021 17:14:39.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-Aug-2021 17:14:39.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.8.0-63-generic
+07-Aug-2021 17:14:39.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Aug-2021 17:14:39.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+07-Aug-2021 17:14:39.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.11+9-Ubuntu-0ubuntu2.20.04
+07-Aug-2021 17:14:39.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+07-Aug-2021 17:14:39.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat
+07-Aug-2021 17:14:39.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat
+07-Aug-2021 17:14:39.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+07-Aug-2021 17:14:39.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+07-Aug-2021 17:14:39.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-Aug-2021 17:14:39.215 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/conf/logging.properties
+07-Aug-2021 17:14:39.215 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Aug-2021 17:14:39.215 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Aug-2021 17:14:39.215 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Aug-2021 17:14:39.215 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+07-Aug-2021 17:14:39.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+07-Aug-2021 17:14:39.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat
+07-Aug-2021 17:14:39.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat
+07-Aug-2021 17:14:39.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/temp
+07-Aug-2021 17:14:39.217 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+07-Aug-2021 17:14:39.289 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8082"]
+07-Aug-2021 17:14:39.337 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Aug-2021 17:14:39.353 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Aug-2021 17:14:39.356 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Aug-2021 17:14:39.360 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1893 ms
+07-Aug-2021 17:14:39.618 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Aug-2021 17:14:39.618 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.38
+07-Aug-2021 17:14:39.703 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/jenkins.war]
+07-Aug-2021 17:14:51.752 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Aug-2021 17:14:52.871 INFO [localhost-startStop-1] hudson.WebAppMain.contextInitialized Jenkins home directory: /home/siddharth/.jenkins found at: $user.home/.jenkins
+07-Aug-2021 17:14:53.968 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/jenkins.war] has finished in [14,252] ms
+07-Aug-2021 17:14:53.974 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/ROOT]
+07-Aug-2021 17:14:54.003 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/ROOT] has finished in [28] ms
+07-Aug-2021 17:14:54.003 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/host-manager]
+07-Aug-2021 17:14:54.070 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/host-manager] has finished in [67] ms
+07-Aug-2021 17:14:54.071 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/examples]
+07-Aug-2021 17:14:54.590 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/examples] has finished in [519] ms
+07-Aug-2021 17:14:54.593 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/docs]
+07-Aug-2021 17:14:54.745 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/docs] has finished in [152] ms
+07-Aug-2021 17:14:54.746 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/manager]
+07-Aug-2021 17:14:54.824 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/manager] has finished in [78] ms
+07-Aug-2021 17:14:54.832 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8082"]
+07-Aug-2021 17:14:54.864 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Aug-2021 17:14:54.890 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 15527 ms
+07-Aug-2021 17:14:54.891 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+ java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:440)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:776)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:722)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:353)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:493)
+
+07-Aug-2021 17:14:54.893 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8082"]
+07-Aug-2021 17:14:55.140 INFO [pool-6-thread-2] jenkins.InitReactorRunner$1.onAttained Started initialization
+07-Aug-2021 17:14:55.294 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Aug-2021 17:14:55.301 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+07-Aug-2021 17:14:55.306 INFO [Loading bundled plugins] hudson.PluginManager.loadDetachedPlugins Upgrading Jenkins. The last running version was 2.288. This Jenkins is version 2.289.3.
+07-Aug-2021 17:14:55.471 INFO [localhost-startStop-1] jenkins.model.Jenkins.cleanUp Stopping Jenkins
+07-Aug-2021 17:14:55.487 INFO [localhost-startStop-1] jenkins.model.Jenkins$16.onAttained Started termination
+07-Aug-2021 17:14:55.490 SEVERE [localhost-startStop-1] jenkins.model.Jenkins$16.onTaskFailed Failed IOHubProvider.cleanUp
+ java.lang.IllegalArgumentException: Unable to inject class jenkins.slaves.IOHubProvider
+	at hudson.init.TaskMethodFinder.lookUp(TaskMethodFinder.java:125)
+	at hudson.init.TaskMethodFinder.invoke(TaskMethodFinder.java:105)
+	at hudson.init.TaskMethodFinder$TaskImpl.run(TaskMethodFinder.java:175)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at org.jvnet.hudson.reactor.Reactor$Node.runIfPossible(Reactor.java:139)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:128)
+	at org.jvnet.hudson.reactor.Reactor$Node.runIfPossible(Reactor.java:139)
+	at org.jvnet.hudson.reactor.Reactor.execute(Reactor.java:276)
+	at jenkins.model.Jenkins._cleanUpRunTerminators(Jenkins.java:3509)
+	at jenkins.model.Jenkins.cleanUp(Jenkins.java:3434)
+	at hudson.WebAppMain.contextDestroyed(WebAppMain.java:441)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4864)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5521)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:226)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1428)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+07-Aug-2021 17:14:55.491 SEVERE [localhost-startStop-1] jenkins.model.Jenkins$16.onTaskFailed Failed NioChannelSelector.cleanUp
+ java.lang.IllegalArgumentException: Unable to inject class jenkins.slaves.NioChannelSelector
+	at hudson.init.TaskMethodFinder.lookUp(TaskMethodFinder.java:125)
+	at hudson.init.TaskMethodFinder.invoke(TaskMethodFinder.java:105)
+	at hudson.init.TaskMethodFinder$TaskImpl.run(TaskMethodFinder.java:175)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at org.jvnet.hudson.reactor.Reactor$Node.runIfPossible(Reactor.java:139)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:128)
+	at org.jvnet.hudson.reactor.Reactor$Node.runIfPossible(Reactor.java:139)
+	at org.jvnet.hudson.reactor.Reactor.execute(Reactor.java:276)
+	at jenkins.model.Jenkins._cleanUpRunTerminators(Jenkins.java:3509)
+	at jenkins.model.Jenkins.cleanUp(Jenkins.java:3434)
+	at hudson.WebAppMain.contextDestroyed(WebAppMain.java:441)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4864)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5521)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:226)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1428)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+07-Aug-2021 17:14:55.492 INFO [localhost-startStop-1] jenkins.model.Jenkins$16.onAttained Completed termination
+07-Aug-2021 17:14:55.493 INFO [localhost-startStop-1] jenkins.model.Jenkins._cleanUpDisconnectComputers Starting node disconnection
+07-Aug-2021 17:14:55.509 INFO [localhost-startStop-1] jenkins.model.Jenkins._cleanUpShutdownPluginManager Stopping plugin manager
+07-Aug-2021 17:14:55.510 INFO [localhost-startStop-1] jenkins.model.Jenkins._cleanUpPersistQueue Persisting build queue
+07-Aug-2021 17:14:55.713 INFO [localhost-startStop-1] jenkins.model.Jenkins.cleanUp Jenkins stopped
+07-Aug-2021 17:14:55.713 INFO [localhost-startStop-1] hudson.WebAppMain.contextDestroyed Shutting down a Jenkins instance that was still starting up
+ java.lang.Throwable: reason
+	at hudson.WebAppMain.contextDestroyed(WebAppMain.java:450)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4864)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5521)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:226)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1428)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+07-Aug-2021 17:14:55.732 SEVERE [Jenkins initialization thread] hudson.util.BootFailure.publish Failed to initialize Jenkins
+ hudson.util.HudsonFailedToLoad: java.lang.InterruptedException
+	at hudson.WebAppMain$3.run(WebAppMain.java:312)
+Caused by: java.lang.InterruptedException
+	at java.base/java.lang.Object.wait(Native Method)
+	at java.base/java.lang.Object.wait(Object.java:328)
+	at org.jvnet.hudson.reactor.Reactor.execute(Reactor.java:280)
+	at jenkins.InitReactorRunner.run(InitReactorRunner.java:49)
+	at jenkins.model.Jenkins.executeReactor(Jenkins.java:1162)
+	at jenkins.model.Jenkins.<init>(Jenkins.java:960)
+	at hudson.model.Hudson.<init>(Hudson.java:86)
+	at hudson.model.Hudson.<init>(Hudson.java:82)
+	at hudson.WebAppMain$3.run(WebAppMain.java:295)
+
+07-Aug-2021 17:14:55.736 SEVERE [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [jenkins] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@3d2cde76]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [SecurityContextImpl [Null authentication]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+07-Aug-2021 17:14:55.737 SEVERE [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [jenkins] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@3d2cde76]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [SecurityContextImpl [Null authentication]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+07-Aug-2021 17:14:55.737 SEVERE [localhost-startStop-1] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [jenkins] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@3d2cde76]) and a value of type [jenkins.security.NonSerializableSecurityContext] (value [jenkins.security.NonSerializableSecurityContext@1f: Authentication: UsernamePasswordAuthenticationToken [Principal=SYSTEM, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+07-Aug-2021 17:14:55.738 INFO [Jenkins initialization thread] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [groovy.lang.Binding]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [groovy.lang.Binding]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1384)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1372)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1224)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1185)
+	at jenkins.util.groovy.GroovyHookScript.<init>(GroovyHookScript.java:44)
+	at hudson.util.BootFailure.publish(BootFailure.java:46)
+	at hudson.WebAppMain$3.run(WebAppMain.java:312)
+
+07-Aug-2021 17:14:55.739 SEVERE [Jenkins initialization thread] hudson.init.impl.InstallUncaughtExceptionHandler$DefaultUncaughtExceptionHandler.uncaughtException A thread (Jenkins initialization thread/19) died unexpectedly due to an uncaught exception, this may leave your Jenkins in a bad way and is usually indicative of a bug in the code.
+ java.lang.NoClassDefFoundError: groovy/lang/Binding
+	at jenkins.util.groovy.GroovyHookScript.<init>(GroovyHookScript.java:44)
+	at hudson.util.BootFailure.publish(BootFailure.java:46)
+	at hudson.WebAppMain$3.run(WebAppMain.java:312)
+Caused by: java.lang.ClassNotFoundException: Illegal access: this web application instance has been stopped already. Could not load [groovy.lang.Binding]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1374)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1224)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1185)
+	... 3 more
+Caused by: java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [groovy.lang.Binding]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1384)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1372)
+	... 5 more
+
+07-Aug-2021 17:14:55.769 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8082"]
+07-Aug-2021 17:14:55.772 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Aug-2021 17:14:55.777 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8082"]
+07-Aug-2021 17:14:55.785 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-Aug-2021 17:16:25.231 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.38
+07-Aug-2021 17:16:25.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 5 2019 11:42:42 UTC
+07-Aug-2021 17:16:25.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.38.0
+07-Aug-2021 17:16:25.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-Aug-2021 17:16:25.242 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.8.0-63-generic
+07-Aug-2021 17:16:25.242 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Aug-2021 17:16:25.242 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+07-Aug-2021 17:16:25.242 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.11+9-Ubuntu-0ubuntu2.20.04
+07-Aug-2021 17:16:25.242 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+07-Aug-2021 17:16:25.243 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat
+07-Aug-2021 17:16:25.243 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat
+07-Aug-2021 17:16:25.243 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+07-Aug-2021 17:16:25.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+07-Aug-2021 17:16:25.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-Aug-2021 17:16:25.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/conf/logging.properties
+07-Aug-2021 17:16:25.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Aug-2021 17:16:25.245 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Aug-2021 17:16:25.245 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Aug-2021 17:16:25.245 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+07-Aug-2021 17:16:25.245 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+07-Aug-2021 17:16:25.245 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat
+07-Aug-2021 17:16:25.245 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat
+07-Aug-2021 17:16:25.245 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/temp
+07-Aug-2021 17:16:25.246 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+07-Aug-2021 17:16:25.333 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8082"]
+07-Aug-2021 17:16:25.384 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Aug-2021 17:16:25.408 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Aug-2021 17:16:25.412 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Aug-2021 17:16:25.413 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 948 ms
+07-Aug-2021 17:16:25.524 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Aug-2021 17:16:25.525 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.38
+07-Aug-2021 17:16:25.560 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/jenkins.war]
+07-Aug-2021 17:16:30.530 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Aug-2021 17:16:31.357 INFO [localhost-startStop-1] hudson.WebAppMain.contextInitialized Jenkins home directory: /home/siddharth/.jenkins found at: $user.home/.jenkins
+07-Aug-2021 17:16:31.757 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/jenkins.war] has finished in [6,196] ms
+07-Aug-2021 17:16:31.769 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/ROOT]
+07-Aug-2021 17:16:31.801 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/ROOT] has finished in [32] ms
+07-Aug-2021 17:16:31.805 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/host-manager]
+07-Aug-2021 17:16:31.885 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/host-manager] has finished in [81] ms
+07-Aug-2021 17:16:31.886 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/examples]
+07-Aug-2021 17:16:32.336 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/examples] has finished in [450] ms
+07-Aug-2021 17:16:32.337 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/docs]
+07-Aug-2021 17:16:32.371 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/docs] has finished in [34] ms
+07-Aug-2021 17:16:32.372 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/manager]
+07-Aug-2021 17:16:32.429 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/manager] has finished in [57] ms
+07-Aug-2021 17:16:32.462 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8082"]
+07-Aug-2021 17:16:32.563 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Aug-2021 17:16:32.596 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 7182 ms
+07-Aug-2021 17:16:32.834 INFO [pool-6-thread-2] jenkins.InitReactorRunner$1.onAttained Started initialization
+07-Aug-2021 17:16:32.877 INFO [Loading bundled plugins] hudson.PluginManager.loadDetachedPlugins Upgrading Jenkins. The last running version was 2.288. This Jenkins is version 2.289.3.
+07-Aug-2021 17:16:33.987 INFO [Loading bundled plugins] hudson.PluginManager.loadDetachedPlugins Upgraded Jenkins from version 2.288 to version 2.289.3. Loaded detached plugins (and dependencies): []
+07-Aug-2021 17:16:38.066 INFO [pool-6-thread-7] jenkins.InitReactorRunner$1.onAttained Listed all plugins
+07-Aug-2021 17:16:42.104 WARNING [pool-6-thread-5] hudson.ExtensionFinder$Sezpoz.scout Failed to scout org.jenkinsci.plugins.gitserver.ssh.SshCommandFactoryImpl
+ java.lang.NoClassDefFoundError: org/apache/sshd/server/Command
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at hudson.ExtensionFinder$Sezpoz.scout(ExtensionFinder.java:725)
+	at hudson.ClassicPluginStrategy.findComponents(ClassicPluginStrategy.java:342)
+	at hudson.ExtensionList.load(ExtensionList.java:380)
+	at hudson.ExtensionList.ensureLoaded(ExtensionList.java:316)
+	at hudson.ExtensionList.getComponents(ExtensionList.java:182)
+	at jenkins.model.Jenkins$6.onInitMilestoneAttained(Jenkins.java:1159)
+	at jenkins.InitReactorRunner$1.onAttained(InitReactorRunner.java:88)
+	at org.jvnet.hudson.reactor.ReactorListener$Aggregator.lambda$onAttained$3(ReactorListener.java:102)
+	at org.jvnet.hudson.reactor.ReactorListener$Aggregator.run(ReactorListener.java:109)
+	at org.jvnet.hudson.reactor.ReactorListener$Aggregator.onAttained(ReactorListener.java:102)
+	at org.jvnet.hudson.reactor.Reactor$1.run(Reactor.java:177)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ClassNotFoundException: org.apache.sshd.server.Command
+	at jenkins.util.AntClassLoader.findClassInComponents(AntClassLoader.java:1392)
+	at jenkins.util.AntClassLoader.findClass(AntClassLoader.java:1347)
+	at jenkins.util.AntClassLoader.loadClass(AntClassLoader.java:1093)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 18 more
+
+07-Aug-2021 17:16:44.825 WARNING [pool-6-thread-5] hudson.ExtensionFinder$GuiceFinder$SezpozModule.configure Failed to load org.jenkinsci.plugins.gitserver.ssh.SshCommandFactoryImpl
+ java.lang.NoClassDefFoundError: org/apache/sshd/server/Command
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2357)
+	at hudson.ExtensionFinder$GuiceFinder$SezpozModule.resolve(ExtensionFinder.java:493)
+	at hudson.ExtensionFinder$GuiceFinder$SezpozModule.resolve(ExtensionFinder.java:480)
+	at hudson.ExtensionFinder$GuiceFinder$SezpozModule.configure(ExtensionFinder.java:523)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:62)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:340)
+	at com.google.inject.spi.Elements.getElements(Elements.java:110)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:138)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:104)
+	at com.google.inject.Guice.createInjector(Guice.java:96)
+	at com.google.inject.Guice.createInjector(Guice.java:73)
+	at hudson.ExtensionFinder$GuiceFinder.<init>(ExtensionFinder.java:283)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at java.base/java.lang.Class.newInstance(Class.java:584)
+	at net.java.sezpoz.IndexItem.instance(IndexItem.java:181)
+	at hudson.ExtensionFinder$Sezpoz._find(ExtensionFinder.java:701)
+	at hudson.ExtensionFinder$Sezpoz.find(ExtensionFinder.java:687)
+	at hudson.ClassicPluginStrategy.findComponents(ClassicPluginStrategy.java:348)
+	at hudson.ExtensionList.load(ExtensionList.java:380)
+	at hudson.ExtensionList.ensureLoaded(ExtensionList.java:316)
+	at hudson.ExtensionList.getComponents(ExtensionList.java:182)
+	at jenkins.model.Jenkins$6.onInitMilestoneAttained(Jenkins.java:1159)
+	at jenkins.InitReactorRunner$1.onAttained(InitReactorRunner.java:88)
+	at org.jvnet.hudson.reactor.ReactorListener$Aggregator.lambda$onAttained$3(ReactorListener.java:102)
+	at org.jvnet.hudson.reactor.ReactorListener$Aggregator.run(ReactorListener.java:109)
+	at org.jvnet.hudson.reactor.ReactorListener$Aggregator.onAttained(ReactorListener.java:102)
+	at org.jvnet.hudson.reactor.Reactor$1.run(Reactor.java:177)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ClassNotFoundException: org.apache.sshd.server.Command
+	at jenkins.util.AntClassLoader.findClassInComponents(AntClassLoader.java:1392)
+	at jenkins.util.AntClassLoader.findClass(AntClassLoader.java:1347)
+	at jenkins.util.AntClassLoader.loadClass(AntClassLoader.java:1093)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 37 more
+
+07-Aug-2021 17:16:49.393 INFO [pool-6-thread-5] jenkins.InitReactorRunner$1.onAttained Prepared all plugins
+07-Aug-2021 17:16:49.456 INFO [pool-6-thread-6] jenkins.InitReactorRunner$1.onAttained Started all plugins
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.vmplugin.v7.Java7$1 (file:/home/siddharth/niraj_devops/Neeraj_repo/tools/tomcat/webapps/jenkins/WEB-INF/lib/groovy-all-2.4.12.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.vmplugin.v7.Java7$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+07-Aug-2021 17:16:52.163 INFO [pool-6-thread-8] jenkins.InitReactorRunner$1.onAttained Augmented all extensions
+07-Aug-2021 17:16:52.324 INFO [pool-6-thread-5] jenkins.InitReactorRunner$1.onAttained System config loaded
+07-Aug-2021 17:16:52.325 INFO [pool-6-thread-2] jenkins.InitReactorRunner$1.onAttained System config adapted
+07-Aug-2021 17:16:52.523 INFO [pool-6-thread-4] jenkins.InitReactorRunner$1.onAttained Loaded all jobs
+07-Aug-2021 17:16:52.526 INFO [pool-6-thread-5] jenkins.InitReactorRunner$1.onAttained Configuration for all jobs updated
+07-Aug-2021 17:16:52.639 INFO [Download metadata thread] hudson.model.AsyncPeriodicWork.lambda$doRun$0 Started Download metadata
+07-Aug-2021 17:16:52.755 INFO [Download metadata thread] hudson.model.AsyncPeriodicWork.lambda$doRun$0 Finished Download metadata. 113 ms
+07-Aug-2021 17:16:52.866 INFO [pool-6-thread-5] jenkins.InitReactorRunner$1.onAttained Completed initialization
+07-Aug-2021 17:16:53.214 INFO [Jenkins initialization thread] hudson.WebAppMain$3.run Jenkins is fully up and running
